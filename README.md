@@ -15,6 +15,12 @@ A simple React application that allows users to search for products and add them
 - Tailwind CSS
 - FakeStore API
 
+Dependencies
+- React – Frontend library
+- React DOM – DOM rendering for React
+- Vite – Build tool
+- Tailwind CSS – Styling framework
+
 ## Getting Started
 
 ### Prerequisites
@@ -27,3 +33,11 @@ Make sure you have Node.js and npm installed.
    ```bash
    git clone https://github.com/yourusername/shoppe.git
    cd shoppe
+   
+2. Install dependancies
+   ```bash
+   npm install
+
+3. Start development server
+   ```bash
+   npm run dev 
