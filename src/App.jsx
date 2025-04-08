@@ -40,7 +40,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [query, allResults]);
 
-  // favorite products
+  // Function to favorite products
   const handleClick = (product) => {
     const isfavorited = favorite.some((item) => item.id === product.id);
 
@@ -52,7 +52,9 @@ const App = () => {
   };
 
   return (
+    // Body
     <main className="sm:mx-10 md:mx-15 py-4 px-2">
+      {/* Navigation */}
       <nav className="flex items-center flex-col gap-4 sm:flex-row">
         <p className="text-3xl font-bold text-black">
           <span className="text-Accent">S</span>hoppe
@@ -60,7 +62,7 @@ const App = () => {
         <SearchBar query={query} setQuery={setQuery} />
       </nav>
 
-      {/* products*/}
+      {/* Products section*/}
       {results.length === 0 && query.trim() === "" ? (
         <p className="text-gray-500 text-center my-8">
           Start typing to search for products.
@@ -87,7 +89,7 @@ const App = () => {
         </section>
       )}
 
-      {/* favorites */}
+      {/* Favorites section*/}
       {favorite.length > 0 && (
         <section>
           <h2 className="text-2xl font-bold my-6">favorites</h2>
