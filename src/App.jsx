@@ -8,7 +8,7 @@ const App = () => {
   const [allResults, setAllResults] = useState([]);
   const [favorite, setfavorite] = useState([]);
 
-  // fetching data and mount
+  // Fetching data and mount
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => {
@@ -92,7 +92,7 @@ const App = () => {
       {/* Favorites section*/}
       {favorite.length > 0 && (
         <section>
-          <h2 className="text-2xl font-bold my-6">favorites</h2>
+          <h2 className="text-2xl font-bold my-6">Favorites</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {favorite.map((product) => (
               <Card
