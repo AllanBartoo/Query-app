@@ -52,8 +52,8 @@ const App = () => {
   };
 
   return (
-    <main className="md:mx-15 py-4">
-      <nav className="flex items-center">
+    <main className="sm:mx-10 md:mx-15 py-4 px-2">
+      <nav className="flex items-center flex-col gap-4 sm:flex-row">
         <p className="text-3xl font-bold text-black">
           <span className="text-Accent">S</span>hoppe
         </p>
