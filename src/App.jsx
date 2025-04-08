@@ -56,7 +56,7 @@ const App = () => {
     <main className="sm:mx-10 md:mx-15 py-4 px-2">
       {/* Navigation */}
       <nav className="flex items-center flex-col gap-4 sm:flex-row">
-        <p className="text-3xl font-bold text-black">
+        <p className="text-3xl font-bold text-black dark:text-white">
           <span className="text-Accent">S</span>hoppe
         </p>
         <SearchBar query={query} setQuery={setQuery} />
@@ -73,7 +73,7 @@ const App = () => {
         </p>
       ) : (
         <section>
-          <h2 className="text-2xl font-bold my-6">Products</h2>
+          <h2 className="text-2xl font-bold my-6 dark:text-white">Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10">
             {results.map((product) => (
               <Card

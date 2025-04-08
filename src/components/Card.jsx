@@ -2,7 +2,7 @@ const Card = ({ title, price, image, onClick, favorited }) => {
   return (
     <div
       className="rounded-md overflow-hidden
-     shadow flex flex-col h-full min-h-[350px]"
+     shadow-md flex flex-col h-full min-h-[350px]"
     >
       <img
         src={image}
